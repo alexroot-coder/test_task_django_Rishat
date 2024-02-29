@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Main page</title>
+</head>
+<body>
+    <p>My test app</p>
+    <ul>
+        {% for i in data_items %}
+        <li>
+            <a href="{{ i.get_absolute_url }}">{{i.name}}</a>
+        </li>
+        {% endfor %}
+    </ul>
+
+</body>
+</html>
